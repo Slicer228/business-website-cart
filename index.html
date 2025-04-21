@@ -1,23 +1,113 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="ru">
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профессиональная разработка</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+<header class="header">
+    <nav class="nav">
+        <h3>Тимофей Гребенюк</h3>
+        <div class="nav-links">
+            <a href="#services">Услуги</a>
+            <a href="#portfolio">Портфолио</a>
+            <a href="#contact">Контакты</a>
+            <a href="#feedback">Обратная связь</a>
+        </div>
+    </nav>
+</header>
 
-<section id = "preheader">
-
+<section class="hero">
+    <div class="container info_container">
+        <h1>Профессиональная разработка</h1>
+        <p>Занимаюсь разработкой на фрилансе уже <span>4 года</span></p>
+        <p>Создаю эффективные решения для вашего бизнеса</p>
+        <a href="#feedback" class="btn">Связаться</a>
+    </div>
+    <div class="container image_container">
+        <img src="public/it.png">
+    </div>
 </section>
-<section id="header">
 
+<section id="services" class="section container">
+    <h2>Мои услуги</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <h3>Golang микросервисы</h3>
+            <p>Разработка высоконагруженных микросервисных архитектур</p>
+        </div>
+        <div class="service-card">
+            <h3>Python разработка</h3>
+            <p>Скрипты, парсеры, автоматизация и backend разработка</p>
+        </div>
+        <div class="service-card">
+            <h3>Wordpress разработка</h3>
+            <p>Создание современных сайтов на CMS Wordpress</p>
+        </div>
+        <div class="service-card">
+            <h3>Верстка сайтов</h3>
+            <p>Адаптивная кроссбраузерная верстка любой сложности</p>
+        </div>
+        <div class="service-card">
+            <h3>Linux администрирование</h3>
+            <p>Настройка и поддержка серверов на Linux</p>
+        </div>
+        <div class="service-card">
+            <h3>Консультации</h3>
+            <p>Профессиональные консультации по разработке</p>
+        </div>
+    </div>
 </section>
-<section id="content">
 
+<section id="portfolio" class="section container">
+    <h2>Портфолио</h2>
+    <div class="portfolio-grid">
+        <div class="portfolio-item">
+            <h3>Онлайн-магазин</h3>
+            <img src="public/online-shop.jpg">
+        </div>
+        <div class="portfolio-item">
+            <h3>Система управления подключениями к серверу</h3>
+            <img src="public/proxy.jpg">
+        </div>
+        <div class="portfolio-item">
+            <h3>Система бартерного обмена</h3>
+            <img src="public/barter.jpg">
+        </div>
+        <div class="portfolio-item">
+            <h3>Бот планировщик задач</h3>
+            <img src="public/bot.jpg">
+        </div>
+    </div>
 </section>
-<section id="footer">
 
+<section id="feedback" class="section container">
+    <div class="form-container">
+        <h2>Форма обратной связи</h2>
+        <form class="contact-form" action="#">
+            <input type="text" class="form-input" placeholder="Ваше имя" required>
+            <input type="tel" class="form-input" placeholder="Ваш номер телефона" required>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+    </div>
 </section>
+
+<section id="contact" class="section contact-section">
+    <div class="container">
+        <h2>Контакты</h2>
+        <p>Email: <a href="mailto:timofeyg05@mail.ru">timofeyg05@mail.ru</a></p>
+        <p>Телефон: <a href="tel:+79990728284">+7 (999) 072 82 84</a></p>
+        <a href="#feedback" class="btn">Форма обратной связи</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>© 2025 Тимофей Гребенюк. Все права защищены</p>
+</footer>
+
 
 </body>
 </html>
